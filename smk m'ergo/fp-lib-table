@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name MX_Alps_Hybrid)(type KiCad)(uri ${KIPRJMOD}/MX_Alps_Hybrid/MX_Alps_Hybrid.pretty)(options "")(descr ""))
+  (lib (name random-keyboard-parts)(type KiCad)(uri "/hdd/new_pcb_project/pcb-stuff/smk m'ergo/random-keyboard-parts.pretty")(options "")(descr ""))
+  (lib (name germparts)(type KiCad)(uri /hdd/new_pcb_project/pcb-stuff/m'ergo/gHeavyIndustries.pretty)(options "")(descr ""))
+  (lib (name keebio)(type KiCad)(uri "/hdd/Cheems pcb files/splitsmall/Keebio-Parts.pretty-master")(options "")(descr ""))
+  (lib (name silk)(type KiCad)(uri /hdd/new_pcb_project/pcb-stuff/m'ergo/silkart.pretty)(options "")(descr ""))
+)

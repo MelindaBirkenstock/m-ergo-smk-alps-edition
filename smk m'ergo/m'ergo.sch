@@ -1,0 +1,1650 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5E2CC836
+P 2800 3650
+F 0 "U1" H 2800 1761 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 2800 1670 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2800 3650 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2800 3650 50  0001 C CNN
+	1    2800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5E2D13D2
+P 2700 1650
+F 0 "#PWR0101" H 2700 1500 50  0001 C CNN
+F 1 "+5V" H 2715 1823 50  0000 C CNN
+F 2 "" H 2700 1650 50  0001 C CNN
+F 3 "" H 2700 1650 50  0001 C CNN
+	1    2700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1650 2700 1850
+Wire Wire Line
+	2700 1850 2800 1850
+Connection ~ 2700 1850
+Wire Wire Line
+	2900 1850 2800 1850
+Connection ~ 2800 1850
+$Comp
+L power:GND #PWR0102
+U 1 1 5E2D5687
+P 2350 5650
+F 0 "#PWR0102" H 2350 5400 50  0001 C CNN
+F 1 "GND" H 2355 5477 50  0000 C CNN
+F 2 "" H 2350 5650 50  0001 C CNN
+F 3 "" H 2350 5650 50  0001 C CNN
+	1    2350 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5450 2700 5450
+Wire Wire Line
+	2700 5450 2350 5450
+Wire Wire Line
+	2350 5450 2350 5650
+Connection ~ 2700 5450
+$Comp
+L Device:R_Small R4
+U 1 1 5E2D8711
+P 4100 4250
+F 0 "R4" V 3904 4250 50  0000 C CNN
+F 1 "10k" V 3995 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4100 4250 50  0001 C CNN
+F 3 "~" H 4100 4250 50  0001 C CNN
+	1    4100 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E2DAF24
+P 4550 4250
+F 0 "#PWR0103" H 4550 4000 50  0001 C CNN
+F 1 "GND" H 4555 4077 50  0000 C CNN
+F 2 "" H 4550 4250 50  0001 C CNN
+F 3 "" H 4550 4250 50  0001 C CNN
+	1    4550 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4250 4000 4250
+Wire Wire Line
+	4200 4250 4550 4250
+$Comp
+L Device:R_Small R2
+U 1 1 5E2DC277
+P 1600 3150
+F 0 "R2" V 1404 3150 50  0000 C CNN
+F 1 "22" V 1495 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 3150 50  0001 C CNN
+F 3 "~" H 1600 3150 50  0001 C CNN
+	1    1600 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5E2DCF30
+P 1300 3250
+F 0 "R1" V 1104 3250 50  0000 C CNN
+F 1 "22" V 1195 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1300 3250 50  0001 C CNN
+F 3 "~" H 1300 3250 50  0001 C CNN
+	1    1300 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 3150 1500 3150
+Wire Wire Line
+	1400 3250 2200 3250
+Wire Wire Line
+	1200 3250 1000 3250
+$Comp
+L Device:C_Small C3
+U 1 1 5E2E0FCF
+P 1650 3550
+F 0 "C3" H 1742 3596 50  0000 L CNN
+F 1 "1uF" H 1742 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1650 3550 50  0001 C CNN
+F 3 "~" H 1650 3550 50  0001 C CNN
+	1    1650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3450 1650 3450
+Wire Wire Line
+	1650 3650 1650 3800
+$Comp
+L power:GND #PWR0104
+U 1 1 5E2E2264
+P 1650 3800
+F 0 "#PWR0104" H 1650 3550 50  0001 C CNN
+F 1 "GND" H 1655 3627 50  0000 C CNN
+F 2 "" H 1650 3800 50  0001 C CNN
+F 3 "" H 1650 3800 50  0001 C CNN
+	1    1650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5E2E440E
+P 1750 6450
+F 0 "C4" H 1842 6496 50  0000 L CNN
+F 1 "0.1uF" H 1842 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1750 6450 50  0001 C CNN
+F 3 "~" H 1750 6450 50  0001 C CNN
+	1    1750 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5E2E46D1
+P 2100 6450
+F 0 "C5" H 2192 6496 50  0000 L CNN
+F 1 "0.1uF" H 2192 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2100 6450 50  0001 C CNN
+F 3 "~" H 2100 6450 50  0001 C CNN
+	1    2100 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5E2E494C
+P 2450 6450
+F 0 "C6" H 2542 6496 50  0000 L CNN
+F 1 "0.1uF" H 2542 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2450 6450 50  0001 C CNN
+F 3 "~" H 2450 6450 50  0001 C CNN
+	1    2450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5E2E4D11
+P 2750 6450
+F 0 "C7" H 2842 6496 50  0000 L CNN
+F 1 "1uF" H 2842 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2750 6450 50  0001 C CNN
+F 3 "~" H 2750 6450 50  0001 C CNN
+	1    2750 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5E2E6093
+P 2300 6100
+F 0 "#PWR0105" H 2300 5950 50  0001 C CNN
+F 1 "+5V" H 2315 6273 50  0000 C CNN
+F 2 "" H 2300 6100 50  0001 C CNN
+F 3 "" H 2300 6100 50  0001 C CNN
+	1    2300 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5E2E677B
+P 2300 6550
+F 0 "#PWR0106" H 2300 6300 50  0001 C CNN
+F 1 "GND" H 2305 6377 50  0000 C CNN
+F 2 "" H 2300 6550 50  0001 C CNN
+F 3 "" H 2300 6550 50  0001 C CNN
+	1    2300 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6350 2100 6350
+Wire Wire Line
+	2450 6350 2300 6350
+Connection ~ 2100 6350
+Connection ~ 2300 6350
+Wire Wire Line
+	2300 6350 2100 6350
+Wire Wire Line
+	2450 6350 2750 6350
+Connection ~ 2450 6350
+Wire Wire Line
+	2750 6550 2450 6550
+Wire Wire Line
+	2450 6550 2300 6550
+Connection ~ 2450 6550
+Wire Wire Line
+	2300 6550 2100 6550
+Connection ~ 2300 6550
+Wire Wire Line
+	2100 6550 1750 6550
+Connection ~ 2100 6550
+$Comp
+L power:+5V #PWR0107
+U 1 1 5E2ED589
+P 1750 2950
+F 0 "#PWR0107" H 1750 2800 50  0001 C CNN
+F 1 "+5V" H 1765 3123 50  0000 C CNN
+F 2 "" H 1750 2950 50  0001 C CNN
+F 3 "" H 1750 2950 50  0001 C CNN
+	1    1750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND24_Small Y1
+U 1 1 5E2EEBCC
+P 1900 2450
+F 0 "Y1" V 1854 2594 50  0000 L CNN
+F 1 "16MHz" V 1945 2594 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 1900 2450 50  0001 C CNN
+F 3 "~" H 1900 2450 50  0001 C CNN
+	1    1900 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 2350 2200 2350
+Wire Wire Line
+	2200 2550 1900 2550
+$Comp
+L Device:C_Small C1
+U 1 1 5E2F05FF
+P 1400 2300
+F 0 "C1" V 1171 2300 50  0000 C CNN
+F 1 "22pF" V 1262 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1400 2300 50  0001 C CNN
+F 3 "~" H 1400 2300 50  0001 C CNN
+	1    1400 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5E2F0AB5
+P 1400 2650
+F 0 "C2" V 1171 2650 50  0000 C CNN
+F 1 "22pF" V 1262 2650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1400 2650 50  0001 C CNN
+F 3 "~" H 1400 2650 50  0001 C CNN
+	1    1400 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 2350 1500 2350
+Wire Wire Line
+	1500 2350 1500 2300
+Connection ~ 1900 2350
+Wire Wire Line
+	1300 2300 1300 2650
+Wire Wire Line
+	1900 2550 1500 2550
+Wire Wire Line
+	1500 2550 1500 2650
+Connection ~ 1900 2550
+$Comp
+L power:GND #PWR0108
+U 1 1 5E2F5904
+P 1300 2800
+F 0 "#PWR0108" H 1300 2550 50  0001 C CNN
+F 1 "GND" H 1305 2627 50  0000 C CNN
+F 2 "" H 1300 2800 50  0001 C CNN
+F 3 "" H 1300 2800 50  0001 C CNN
+	1    1300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2650 1300 2800
+Connection ~ 1300 2650
+Wire Wire Line
+	2200 2950 1750 2950
+Wire Wire Line
+	2000 2450 2000 2800
+Wire Wire Line
+	1800 2450 1800 2800
+Wire Wire Line
+	1800 2800 2000 2800
+Wire Wire Line
+	1800 2800 1300 2800
+Connection ~ 1800 2800
+Connection ~ 1300 2800
+Wire Wire Line
+	2200 2150 2150 2150
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E306881
+P 1900 2150
+F 0 "SW1" H 1900 2435 50  0000 C CNN
+F 1 "SW_Push" H 1900 2344 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 2350 50  0001 C CNN
+F 3 "~" H 1900 2350 50  0001 C CNN
+	1    1900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5E30733C
+P 1550 2150
+F 0 "#PWR0109" H 1550 1900 50  0001 C CNN
+F 1 "GND" H 1555 1977 50  0000 C CNN
+F 2 "" H 1550 2150 50  0001 C CNN
+F 3 "" H 1550 2150 50  0001 C CNN
+	1    1550 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2150 1550 2150
+$Comp
+L Device:R_Small R3
+U 1 1 5E3086B2
+P 2150 1650
+F 0 "R3" H 2209 1696 50  0000 L CNN
+F 1 "10k" H 2209 1605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2150 1650 50  0001 C CNN
+F 3 "~" H 2150 1650 50  0001 C CNN
+	1    2150 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2150 2150 1750
+Connection ~ 2150 2150
+Wire Wire Line
+	2150 2150 2100 2150
+Wire Wire Line
+	2150 1550 2150 1350
+$Comp
+L power:+5V #PWR0110
+U 1 1 5E30C7C4
+P 2150 1350
+F 0 "#PWR0110" H 2150 1200 50  0001 C CNN
+F 1 "+5V" H 2165 1523 50  0000 C CNN
+F 2 "" H 2150 1350 50  0001 C CNN
+F 3 "" H 2150 1350 50  0001 C CNN
+	1    2150 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 3250 0    50   Input ~ 0
+D-
+Text GLabel 1000 3150 0    50   Input ~ 0
+D+
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5E3186F0
+P 5400 6000
+F 0 "F1" V 5195 6000 50  0000 C CNN
+F 1 "500mA" V 5286 6000 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5450 5800 50  0001 L CNN
+F 3 "~" H 5400 6000 50  0001 C CNN
+	1    5400 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0111
+U 1 1 5E31908C
+P 5050 6000
+F 0 "#PWR0111" H 5050 5850 50  0001 C CNN
+F 1 "VCC" H 5067 6173 50  0000 C CNN
+F 2 "" H 5050 6000 50  0001 C CNN
+F 3 "" H 5050 6000 50  0001 C CNN
+	1    5050 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 6000 5050 6000
+Wire Wire Line
+	5300 6000 5050 6000
+Connection ~ 5050 6000
+Wire Wire Line
+	5500 6000 5800 6000
+$Comp
+L power:+5V #PWR0112
+U 1 1 5E31CE59
+P 5800 6000
+F 0 "#PWR0112" H 5800 5850 50  0001 C CNN
+F 1 "+5V" H 5815 6173 50  0000 C CNN
+F 2 "" H 5800 6000 50  0001 C CNN
+F 3 "" H 5800 6000 50  0001 C CNN
+	1    5800 6000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 6300 2    50   Input ~ 0
+D-
+Text GLabel 4700 6200 2    50   Input ~ 0
+D+
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX1
+U 1 1 5E320BD5
+P 4600 1600
+F 0 "MX1" H 4633 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 4633 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 3975 1575 60  0001 C CNN
+F 3 "" H 3975 1575 60  0001 C CNN
+	1    4600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D1
+U 1 1 5E32129C
+P 4450 1900
+F 0 "D1" V 4496 1832 50  0000 R CNN
+F 1 "SOD-123" V 4405 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 4450 1900 50  0001 C CNN
+F 3 "~" V 4450 1900 50  0001 C CNN
+	1    4450 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 1750 4450 1750
+Wire Wire Line
+	4450 1750 4450 1800
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX4
+U 1 1 5E32301C
+P 5250 1600
+F 0 "MX4" H 5283 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 5283 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 4625 1575 60  0001 C CNN
+F 3 "" H 4625 1575 60  0001 C CNN
+	1    5250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX2
+U 1 1 5E323682
+P 4600 2350
+F 0 "MX2" H 4633 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 4633 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 3975 2325 60  0001 C CNN
+F 3 "" H 3975 2325 60  0001 C CNN
+	1    4600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX5
+U 1 1 5E323CF8
+P 5250 2350
+F 0 "MX5" H 5283 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 5283 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 4625 2325 60  0001 C CNN
+F 3 "" H 4625 2325 60  0001 C CNN
+	1    5250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D3
+U 1 1 5E324810
+P 5100 1900
+F 0 "D3" V 5146 1832 50  0000 R CNN
+F 1 "SOD-123" V 5055 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5100 1900 50  0001 C CNN
+F 3 "~" V 5100 1900 50  0001 C CNN
+	1    5100 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D4
+U 1 1 5E324BE5
+P 5100 2650
+F 0 "D4" V 5146 2582 50  0000 R CNN
+F 1 "SOD-123" V 5055 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5100 2650 50  0001 C CNN
+F 3 "~" V 5100 2650 50  0001 C CNN
+	1    5100 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D2
+U 1 1 5E325006
+P 4450 2650
+F 0 "D2" V 4496 2582 50  0000 R CNN
+F 1 "SOD-123" V 4405 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 4450 2650 50  0001 C CNN
+F 3 "~" V 4450 2650 50  0001 C CNN
+	1    4450 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 1750 5100 1750
+Wire Wire Line
+	5100 1750 5100 1800
+Wire Wire Line
+	5200 2500 5100 2500
+Wire Wire Line
+	5100 2500 5100 2550
+Wire Wire Line
+	4550 2500 4550 2550
+Wire Wire Line
+	4550 2550 4450 2550
+Wire Wire Line
+	4450 2000 5100 2000
+Wire Wire Line
+	4750 1550 4750 2300
+Wire Wire Line
+	4750 1550 4750 1200
+Connection ~ 4750 1550
+Wire Wire Line
+	5400 1550 5400 1200
+Wire Wire Line
+	5100 2750 4450 2750
+Wire Wire Line
+	4450 2750 4200 2750
+Connection ~ 4450 2750
+Wire Wire Line
+	4450 2000 4250 2000
+Connection ~ 4450 2000
+Text GLabel 4250 2000 0    50   Input ~ 0
+ROW0
+Text GLabel 4200 2750 0    50   Input ~ 0
+ROW1
+Text GLabel 4750 1200 1    50   Input ~ 0
+COL0
+Text GLabel 5400 1200 1    50   Input ~ 0
+COL1
+Wire Wire Line
+	2300 6100 2300 6350
+Text GLabel 3400 2450 2    50   Input ~ 0
+ROW0
+Text GLabel 3400 4950 2    50   Input ~ 0
+COL0
+Text GLabel 3400 4550 2    50   Input ~ 0
+COL1
+Wire Wire Line
+	2200 3150 1700 3150
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX8
+U 1 1 5E5220AB
+P 5750 1600
+F 0 "MX8" H 5783 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 5783 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 5125 1575 60  0001 C CNN
+F 3 "" H 5125 1575 60  0001 C CNN
+	1    5750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D7
+U 1 1 5E5220B1
+P 5600 1900
+F 0 "D7" V 5646 1832 50  0000 R CNN
+F 1 "SOD-123" V 5555 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5600 1900 50  0001 C CNN
+F 3 "~" V 5600 1900 50  0001 C CNN
+	1    5600 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 1750 5600 1750
+Wire Wire Line
+	5600 1750 5600 1800
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX11
+U 1 1 5E5220B9
+P 6400 1600
+F 0 "MX11" H 6433 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 5775 1575 60  0001 C CNN
+F 3 "" H 5775 1575 60  0001 C CNN
+	1    6400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX9
+U 1 1 5E5220BF
+P 5750 2350
+F 0 "MX9" H 5783 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 5783 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 5125 2325 60  0001 C CNN
+F 3 "" H 5125 2325 60  0001 C CNN
+	1    5750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX12
+U 1 1 5E5220C5
+P 6400 2350
+F 0 "MX12" H 6433 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 5775 2325 60  0001 C CNN
+F 3 "" H 5775 2325 60  0001 C CNN
+	1    6400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D10
+U 1 1 5E5220CB
+P 6250 1900
+F 0 "D10" V 6296 1832 50  0000 R CNN
+F 1 "SOD-123" V 6205 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6250 1900 50  0001 C CNN
+F 3 "~" V 6250 1900 50  0001 C CNN
+	1    6250 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D11
+U 1 1 5E5220D1
+P 6250 2650
+F 0 "D11" V 6296 2582 50  0000 R CNN
+F 1 "SOD-123" V 6205 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6250 2650 50  0001 C CNN
+F 3 "~" V 6250 2650 50  0001 C CNN
+	1    6250 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D8
+U 1 1 5E5220D7
+P 5600 2650
+F 0 "D8" V 5646 2582 50  0000 R CNN
+F 1 "SOD-123" V 5555 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5600 2650 50  0001 C CNN
+F 3 "~" V 5600 2650 50  0001 C CNN
+	1    5600 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 1750 6250 1750
+Wire Wire Line
+	6250 1750 6250 1800
+Wire Wire Line
+	6350 2500 6250 2500
+Wire Wire Line
+	6250 2500 6250 2550
+Wire Wire Line
+	5700 2500 5700 2550
+Wire Wire Line
+	5700 2550 5600 2550
+Wire Wire Line
+	5600 2000 6250 2000
+Wire Wire Line
+	5900 1550 5900 2300
+Wire Wire Line
+	5900 1550 5900 1200
+Connection ~ 5900 1550
+Wire Wire Line
+	6550 1550 6550 1200
+Wire Wire Line
+	6250 2750 5600 2750
+Connection ~ 5600 2750
+Text GLabel 5900 1200 1    50   Input ~ 0
+COL2
+Text GLabel 6550 1200 1    50   Input ~ 0
+COL3
+Wire Wire Line
+	5100 2750 5600 2750
+Connection ~ 5100 2750
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX14
+U 1 1 5E55AA94
+P 6900 1600
+F 0 "MX14" H 6933 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 6933 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 6275 1575 60  0001 C CNN
+F 3 "" H 6275 1575 60  0001 C CNN
+	1    6900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D13
+U 1 1 5E55AA9A
+P 6750 1900
+F 0 "D13" V 6796 1832 50  0000 R CNN
+F 1 "SOD-123" V 6705 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6750 1900 50  0001 C CNN
+F 3 "~" V 6750 1900 50  0001 C CNN
+	1    6750 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 1750 6750 1750
+Wire Wire Line
+	6750 1750 6750 1800
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX17
+U 1 1 5E55AAA2
+P 7550 1600
+F 0 "MX17" H 7583 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 7583 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 6925 1575 60  0001 C CNN
+F 3 "" H 6925 1575 60  0001 C CNN
+	1    7550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX15
+U 1 1 5E55AAA8
+P 6900 2350
+F 0 "MX15" H 6933 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 6933 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 6275 2325 60  0001 C CNN
+F 3 "" H 6275 2325 60  0001 C CNN
+	1    6900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX18
+U 1 1 5E55AAAE
+P 7550 2350
+F 0 "MX18" H 7583 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 7583 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 6925 2325 60  0001 C CNN
+F 3 "" H 6925 2325 60  0001 C CNN
+	1    7550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D16
+U 1 1 5E55AAB4
+P 7400 1900
+F 0 "D16" V 7446 1832 50  0000 R CNN
+F 1 "SOD-123" V 7355 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7400 1900 50  0001 C CNN
+F 3 "~" V 7400 1900 50  0001 C CNN
+	1    7400 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D17
+U 1 1 5E55AABA
+P 7400 2650
+F 0 "D17" V 7446 2582 50  0000 R CNN
+F 1 "SOD-123" V 7355 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7400 2650 50  0001 C CNN
+F 3 "~" V 7400 2650 50  0001 C CNN
+	1    7400 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D14
+U 1 1 5E55AAC0
+P 6750 2650
+F 0 "D14" V 6796 2582 50  0000 R CNN
+F 1 "SOD-123" V 6705 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6750 2650 50  0001 C CNN
+F 3 "~" V 6750 2650 50  0001 C CNN
+	1    6750 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 1750 7400 1750
+Wire Wire Line
+	7400 1750 7400 1800
+Wire Wire Line
+	7500 2500 7400 2500
+Wire Wire Line
+	7400 2500 7400 2550
+Wire Wire Line
+	6850 2500 6850 2550
+Wire Wire Line
+	6850 2550 6750 2550
+Wire Wire Line
+	6750 2000 7400 2000
+Wire Wire Line
+	7050 1550 7050 2300
+Wire Wire Line
+	7050 1550 7050 1200
+Connection ~ 7050 1550
+Wire Wire Line
+	7700 1550 7700 1200
+Wire Wire Line
+	7400 2750 6750 2750
+Connection ~ 6750 2750
+Text GLabel 7050 1200 1    50   Input ~ 0
+COL4
+Text GLabel 7700 1200 1    50   Input ~ 0
+COL5
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX20
+U 1 1 5E55AADC
+P 8050 1600
+F 0 "MX20" H 8083 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 8083 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 7425 1575 60  0001 C CNN
+F 3 "" H 7425 1575 60  0001 C CNN
+	1    8050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D19
+U 1 1 5E55AAE2
+P 7900 1900
+F 0 "D19" V 7946 1832 50  0000 R CNN
+F 1 "SOD-123" V 7855 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7900 1900 50  0001 C CNN
+F 3 "~" V 7900 1900 50  0001 C CNN
+	1    7900 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 1750 7900 1750
+Wire Wire Line
+	7900 1750 7900 1800
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX23
+U 1 1 5E55AAEA
+P 8700 1600
+F 0 "MX23" H 8733 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 8733 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 8075 1575 60  0001 C CNN
+F 3 "" H 8075 1575 60  0001 C CNN
+	1    8700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX21
+U 1 1 5E55AAF0
+P 8050 2350
+F 0 "MX21" H 8083 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 8083 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 7425 2325 60  0001 C CNN
+F 3 "" H 7425 2325 60  0001 C CNN
+	1    8050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX24
+U 1 1 5E55AAF6
+P 8700 2350
+F 0 "MX24" H 8733 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 8733 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 8075 2325 60  0001 C CNN
+F 3 "" H 8075 2325 60  0001 C CNN
+	1    8700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D22
+U 1 1 5E55AAFC
+P 8550 1900
+F 0 "D22" V 8596 1832 50  0000 R CNN
+F 1 "SOD-123" V 8505 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8550 1900 50  0001 C CNN
+F 3 "~" V 8550 1900 50  0001 C CNN
+	1    8550 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D23
+U 1 1 5E55AB02
+P 8550 2650
+F 0 "D23" V 8596 2582 50  0000 R CNN
+F 1 "SOD-123" V 8505 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8550 2650 50  0001 C CNN
+F 3 "~" V 8550 2650 50  0001 C CNN
+	1    8550 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D20
+U 1 1 5E55AB08
+P 7900 2650
+F 0 "D20" V 7946 2582 50  0000 R CNN
+F 1 "SOD-123" V 7855 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7900 2650 50  0001 C CNN
+F 3 "~" V 7900 2650 50  0001 C CNN
+	1    7900 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 1750 8550 1750
+Wire Wire Line
+	8550 1750 8550 1800
+Wire Wire Line
+	8650 2500 8550 2500
+Wire Wire Line
+	8550 2500 8550 2550
+Wire Wire Line
+	8000 2500 8000 2550
+Wire Wire Line
+	8000 2550 7900 2550
+Wire Wire Line
+	7900 2000 8550 2000
+Wire Wire Line
+	8200 1550 8200 2300
+Wire Wire Line
+	8200 1550 8200 1200
+Connection ~ 8200 1550
+Wire Wire Line
+	8850 1550 8850 1200
+Wire Wire Line
+	8550 2750 7900 2750
+Connection ~ 7900 2750
+Text GLabel 8200 1200 1    50   Input ~ 0
+COL6
+Text GLabel 8850 1200 1    50   Input ~ 0
+COL7
+Wire Wire Line
+	7400 2750 7900 2750
+Connection ~ 7400 2750
+Connection ~ 6250 2000
+Wire Wire Line
+	6250 2750 6750 2750
+Connection ~ 6250 2750
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX26
+U 1 1 5E57BAA9
+P 9450 1600
+F 0 "MX26" H 9483 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 9483 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 8825 1575 60  0001 C CNN
+F 3 "" H 8825 1575 60  0001 C CNN
+	1    9450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D25
+U 1 1 5E57BAAF
+P 9300 1900
+F 0 "D25" V 9346 1832 50  0000 R CNN
+F 1 "SOD-123" V 9255 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9300 1900 50  0001 C CNN
+F 3 "~" V 9300 1900 50  0001 C CNN
+	1    9300 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 1750 9300 1750
+Wire Wire Line
+	9300 1750 9300 1800
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX29
+U 1 1 5E57BAB7
+P 10100 1600
+F 0 "MX29" H 10133 1823 60  0000 C CNN
+F 1 "MX-NoLED" H 10133 1749 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 9475 1575 60  0001 C CNN
+F 3 "" H 9475 1575 60  0001 C CNN
+	1    10100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX27
+U 1 1 5E57BABD
+P 9450 2350
+F 0 "MX27" H 9483 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 9483 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 8825 2325 60  0001 C CNN
+F 3 "" H 8825 2325 60  0001 C CNN
+	1    9450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX30
+U 1 1 5E57BAC3
+P 10100 2350
+F 0 "MX30" H 10133 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 10133 2499 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 9475 2325 60  0001 C CNN
+F 3 "" H 9475 2325 60  0001 C CNN
+	1    10100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D28
+U 1 1 5E57BAC9
+P 9950 1900
+F 0 "D28" V 9996 1832 50  0000 R CNN
+F 1 "SOD-123" V 9905 1832 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9950 1900 50  0001 C CNN
+F 3 "~" V 9950 1900 50  0001 C CNN
+	1    9950 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D29
+U 1 1 5E57BACF
+P 9950 2650
+F 0 "D29" V 9996 2582 50  0000 R CNN
+F 1 "SOD-123" V 9905 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9950 2650 50  0001 C CNN
+F 3 "~" V 9950 2650 50  0001 C CNN
+	1    9950 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D26
+U 1 1 5E57BAD5
+P 9300 2650
+F 0 "D26" V 9346 2582 50  0000 R CNN
+F 1 "SOD-123" V 9255 2582 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9300 2650 50  0001 C CNN
+F 3 "~" V 9300 2650 50  0001 C CNN
+	1    9300 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10050 1750 9950 1750
+Wire Wire Line
+	9950 1750 9950 1800
+Wire Wire Line
+	10050 2500 9950 2500
+Wire Wire Line
+	9950 2500 9950 2550
+Wire Wire Line
+	9400 2500 9400 2550
+Wire Wire Line
+	9400 2550 9300 2550
+Wire Wire Line
+	9300 2000 9950 2000
+Wire Wire Line
+	9600 1550 9600 2300
+Wire Wire Line
+	9600 1550 9600 1200
+Connection ~ 9600 1550
+Wire Wire Line
+	10250 1550 10250 1200
+Wire Wire Line
+	9950 2750 9300 2750
+Connection ~ 9300 2750
+Text GLabel 9600 1200 1    50   Input ~ 0
+COL8
+Text GLabel 10250 1200 1    50   Input ~ 0
+COL9
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX32
+U 1 1 5E57BAF1
+P 6400 3750
+F 0 "MX32" H 6433 3973 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 3899 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 5775 3725 60  0001 C CNN
+F 3 "" H 5775 3725 60  0001 C CNN
+	1    6400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D31
+U 1 1 5E57BAF7
+P 6250 4050
+F 0 "D31" V 6296 3982 50  0000 R CNN
+F 1 "SOD-123" V 6205 3982 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6250 4050 50  0001 C CNN
+F 3 "~" V 6250 4050 50  0001 C CNN
+	1    6250 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 3900 6250 3900
+Wire Wire Line
+	6250 3900 6250 3950
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX33
+U 1 1 5E57BB05
+P 6900 3750
+F 0 "MX33" H 6933 3973 60  0000 C CNN
+F 1 "MX-NoLED" H 6933 3899 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 6275 3725 60  0001 C CNN
+F 3 "" H 6275 3725 60  0001 C CNN
+	1    6900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D32
+U 1 1 5E57BB1D
+P 6750 4050
+F 0 "D32" V 6796 3982 50  0000 R CNN
+F 1 "SOD-123" V 6705 3982 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6750 4050 50  0001 C CNN
+F 3 "~" V 6750 4050 50  0001 C CNN
+	1    6750 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 3900 6850 3950
+Wire Wire Line
+	6850 3950 6750 3950
+Wire Wire Line
+	6250 4150 6750 4150
+Wire Wire Line
+	8550 2750 9300 2750
+Connection ~ 8550 2750
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX3
+U 1 1 5E5DFF97
+P 4600 3050
+F 0 "MX3" H 4633 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 4633 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 3975 3025 60  0001 C CNN
+F 3 "" H 3975 3025 60  0001 C CNN
+	1    4600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX7
+U 1 1 5E5DFF9D
+P 5250 3050
+F 0 "MX7" H 5283 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 5283 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 4625 3025 60  0001 C CNN
+F 3 "" H 4625 3025 60  0001 C CNN
+	1    5250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D6
+U 1 1 5E5DFFA3
+P 5100 3350
+F 0 "D6" V 5146 3282 50  0000 R CNN
+F 1 "SOD-123" V 5055 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5100 3350 50  0001 C CNN
+F 3 "~" V 5100 3350 50  0001 C CNN
+	1    5100 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D5
+U 1 1 5E5DFFA9
+P 4450 3350
+F 0 "D5" V 4496 3282 50  0000 R CNN
+F 1 "SOD-123" V 4405 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 4450 3350 50  0001 C CNN
+F 3 "~" V 4450 3350 50  0001 C CNN
+	1    4450 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3200 5100 3200
+Wire Wire Line
+	5100 3200 5100 3250
+Wire Wire Line
+	4550 3200 4550 3250
+Wire Wire Line
+	4550 3250 4450 3250
+Wire Wire Line
+	5100 3450 4450 3450
+Wire Wire Line
+	4450 3450 4200 3450
+Connection ~ 4450 3450
+Text GLabel 4200 3450 0    50   Input ~ 0
+ROW2
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX10
+U 1 1 5E5DFFB7
+P 5750 3050
+F 0 "MX10" H 5783 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 5783 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 5125 3025 60  0001 C CNN
+F 3 "" H 5125 3025 60  0001 C CNN
+	1    5750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX13
+U 1 1 5E5DFFBD
+P 6400 3050
+F 0 "MX13" H 6433 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 5775 3025 60  0001 C CNN
+F 3 "" H 5775 3025 60  0001 C CNN
+	1    6400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D12
+U 1 1 5E5DFFC3
+P 6250 3350
+F 0 "D12" V 6296 3282 50  0000 R CNN
+F 1 "SOD-123" V 6205 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6250 3350 50  0001 C CNN
+F 3 "~" V 6250 3350 50  0001 C CNN
+	1    6250 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D9
+U 1 1 5E5DFFC9
+P 5600 3350
+F 0 "D9" V 5646 3282 50  0000 R CNN
+F 1 "SOD-123" V 5555 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5600 3350 50  0001 C CNN
+F 3 "~" V 5600 3350 50  0001 C CNN
+	1    5600 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 3200 6250 3200
+Wire Wire Line
+	6250 3200 6250 3250
+Wire Wire Line
+	5700 3200 5700 3250
+Wire Wire Line
+	5700 3250 5600 3250
+Wire Wire Line
+	6250 3450 5600 3450
+Connection ~ 5600 3450
+Wire Wire Line
+	5100 3450 5600 3450
+Connection ~ 5100 3450
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX16
+U 1 1 5E5DFFD7
+P 6900 3050
+F 0 "MX16" H 6933 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 6933 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 6275 3025 60  0001 C CNN
+F 3 "" H 6275 3025 60  0001 C CNN
+	1    6900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX19
+U 1 1 5E5DFFDD
+P 7550 3050
+F 0 "MX19" H 7583 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 7583 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 6925 3025 60  0001 C CNN
+F 3 "" H 6925 3025 60  0001 C CNN
+	1    7550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D18
+U 1 1 5E5DFFE3
+P 7400 3350
+F 0 "D18" V 7446 3282 50  0000 R CNN
+F 1 "SOD-123" V 7355 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7400 3350 50  0001 C CNN
+F 3 "~" V 7400 3350 50  0001 C CNN
+	1    7400 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D15
+U 1 1 5E5DFFE9
+P 6750 3350
+F 0 "D15" V 6796 3282 50  0000 R CNN
+F 1 "SOD-123" V 6705 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6750 3350 50  0001 C CNN
+F 3 "~" V 6750 3350 50  0001 C CNN
+	1    6750 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 3200 7400 3200
+Wire Wire Line
+	7400 3200 7400 3250
+Wire Wire Line
+	6850 3200 6850 3250
+Wire Wire Line
+	6850 3250 6750 3250
+Wire Wire Line
+	7400 3450 6750 3450
+Connection ~ 6750 3450
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX22
+U 1 1 5E5DFFF5
+P 8050 3050
+F 0 "MX22" H 8083 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 8083 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 7425 3025 60  0001 C CNN
+F 3 "" H 7425 3025 60  0001 C CNN
+	1    8050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX25
+U 1 1 5E5DFFFB
+P 8700 3050
+F 0 "MX25" H 8733 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 8733 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 8075 3025 60  0001 C CNN
+F 3 "" H 8075 3025 60  0001 C CNN
+	1    8700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D24
+U 1 1 5E5E0001
+P 8550 3350
+F 0 "D24" V 8596 3282 50  0000 R CNN
+F 1 "SOD-123" V 8505 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8550 3350 50  0001 C CNN
+F 3 "~" V 8550 3350 50  0001 C CNN
+	1    8550 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D21
+U 1 1 5E5E0007
+P 7900 3350
+F 0 "D21" V 7946 3282 50  0000 R CNN
+F 1 "SOD-123" V 7855 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7900 3350 50  0001 C CNN
+F 3 "~" V 7900 3350 50  0001 C CNN
+	1    7900 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 3200 8550 3200
+Wire Wire Line
+	8550 3200 8550 3250
+Wire Wire Line
+	8000 3200 8000 3250
+Wire Wire Line
+	8000 3250 7900 3250
+Wire Wire Line
+	8550 3450 7900 3450
+Connection ~ 7900 3450
+Wire Wire Line
+	7400 3450 7900 3450
+Connection ~ 7400 3450
+Wire Wire Line
+	6250 3450 6750 3450
+Connection ~ 6250 3450
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX28
+U 1 1 5E5E0017
+P 9450 3050
+F 0 "MX28" H 9483 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 9483 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 8825 3025 60  0001 C CNN
+F 3 "" H 8825 3025 60  0001 C CNN
+	1    9450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX31
+U 1 1 5E5E001D
+P 10100 3050
+F 0 "MX31" H 10133 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 10133 3199 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 9475 3025 60  0001 C CNN
+F 3 "" H 9475 3025 60  0001 C CNN
+	1    10100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D30
+U 1 1 5E5E0023
+P 9950 3350
+F 0 "D30" V 9996 3282 50  0000 R CNN
+F 1 "SOD-123" V 9905 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9950 3350 50  0001 C CNN
+F 3 "~" V 9950 3350 50  0001 C CNN
+	1    9950 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D27
+U 1 1 5E5E0029
+P 9300 3350
+F 0 "D27" V 9346 3282 50  0000 R CNN
+F 1 "SOD-123" V 9255 3282 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9300 3350 50  0001 C CNN
+F 3 "~" V 9300 3350 50  0001 C CNN
+	1    9300 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10050 3200 9950 3200
+Wire Wire Line
+	9950 3200 9950 3250
+Wire Wire Line
+	9400 3200 9400 3250
+Wire Wire Line
+	9400 3250 9300 3250
+Wire Wire Line
+	9950 3450 9300 3450
+Connection ~ 9300 3450
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX34
+U 1 1 5E5E0035
+P 5750 3750
+F 0 "MX34" H 5783 3973 60  0000 C CNN
+F 1 "MX-NoLED" H 5783 3899 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 5125 3725 60  0001 C CNN
+F 3 "" H 5125 3725 60  0001 C CNN
+	1    5750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D33
+U 1 1 5E5E003B
+P 5600 4050
+F 0 "D33" V 5646 3982 50  0000 R CNN
+F 1 "SOD-123" V 5555 3982 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 5600 4050 50  0001 C CNN
+F 3 "~" V 5600 4050 50  0001 C CNN
+	1    5600 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 3900 5700 3950
+Wire Wire Line
+	5700 3950 5600 3950
+Wire Wire Line
+	5100 4150 5600 4150
+Wire Wire Line
+	8550 3450 9300 3450
+Connection ~ 8550 3450
+Wire Wire Line
+	4750 2300 4750 3000
+Connection ~ 4750 2300
+Wire Wire Line
+	5400 3000 5400 2300
+Wire Wire Line
+	5900 3000 5900 2300
+Connection ~ 5900 2300
+Wire Wire Line
+	7050 3000 7050 2300
+Connection ~ 7050 2300
+Wire Wire Line
+	8200 3000 8200 2300
+Connection ~ 8200 2300
+Wire Wire Line
+	8850 3000 8850 2300
+Wire Wire Line
+	9600 3000 9600 2300
+Connection ~ 9600 2300
+Text GLabel 3400 3050 2    50   Input ~ 0
+ROW2
+Text GLabel 3400 2650 2    50   Input ~ 0
+COL2
+Text GLabel 3400 2550 2    50   Input ~ 0
+COL3
+Text GLabel 3400 5050 2    50   Input ~ 0
+COL4
+Text GLabel 3400 3650 2    50   Input ~ 0
+COL6
+Text GLabel 3400 4050 2    50   Input ~ 0
+COL7
+Text GLabel 3400 3950 2    50   Input ~ 0
+COL8
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX35
+U 1 1 5E77BD83
+P 8050 3750
+F 0 "MX35" H 8083 3973 60  0000 C CNN
+F 1 "MX-NoLED" H 8083 3899 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 7425 3725 60  0001 C CNN
+F 3 "" H 7425 3725 60  0001 C CNN
+	1    8050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D34
+U 1 1 5E77BD89
+P 7900 4050
+F 0 "D34" V 7946 3982 50  0000 R CNN
+F 1 "SOD-123" V 7855 3982 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7900 4050 50  0001 C CNN
+F 3 "~" V 7900 4050 50  0001 C CNN
+	1    7900 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 3900 7900 3900
+Wire Wire Line
+	7900 3900 7900 3950
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX36
+U 1 1 5E77BD91
+P 8700 3750
+F 0 "MX36" H 8733 3973 60  0000 C CNN
+F 1 "MX-NoLED" H 8733 3899 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 8075 3725 60  0001 C CNN
+F 3 "" H 8075 3725 60  0001 C CNN
+	1    8700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D35
+U 1 1 5E77BD97
+P 8550 4050
+F 0 "D35" V 8596 3982 50  0000 R CNN
+F 1 "SOD-123" V 8505 3982 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8550 4050 50  0001 C CNN
+F 3 "~" V 8550 4050 50  0001 C CNN
+	1    8550 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 3900 8650 3950
+Wire Wire Line
+	8650 3950 8550 3950
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX37
+U 1 1 5E77BDA3
+P 7550 3750
+F 0 "MX37" H 7583 3973 60  0000 C CNN
+F 1 "MX-NoLED" H 7583 3899 20  0000 C CNN
+F 2 "Keyboard bits:fixedsmkalpspcbfootprint" H 6925 3725 60  0001 C CNN
+F 3 "" H 6925 3725 60  0001 C CNN
+	1    7550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D36
+U 1 1 5E77BDA9
+P 7400 4050
+F 0 "D36" V 7446 3982 50  0000 R CNN
+F 1 "SOD-123" V 7355 3982 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7400 4050 50  0001 C CNN
+F 3 "~" V 7400 4050 50  0001 C CNN
+	1    7400 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 3900 7500 3950
+Wire Wire Line
+	7500 3950 7400 3950
+Text GLabel 3400 3750 2    50   Input ~ 0
+COL9
+Text GLabel 3400 3150 2    50   Input ~ 0
+ROW1
+Connection ~ 6250 4150
+Wire Wire Line
+	5600 4150 6250 4150
+Connection ~ 5600 4150
+Wire Wire Line
+	6750 4150 7400 4150
+Connection ~ 6750 4150
+Wire Wire Line
+	7400 4150 7900 4150
+Connection ~ 7400 4150
+Wire Wire Line
+	7900 4150 8550 4150
+Connection ~ 7900 4150
+Wire Wire Line
+	8850 3000 8850 3700
+Connection ~ 8850 3000
+Wire Wire Line
+	8200 3700 8200 3000
+Connection ~ 8200 3000
+Wire Wire Line
+	7700 3700 7700 3000
+Connection ~ 7700 3000
+Wire Wire Line
+	7050 3700 7050 3000
+Connection ~ 7050 3000
+Wire Wire Line
+	6550 2300 6550 3000
+Connection ~ 6550 3000
+Wire Wire Line
+	6550 3000 6550 3700
+Wire Wire Line
+	5900 3000 5900 3700
+Connection ~ 5900 3000
+Text GLabel 5100 4150 0    50   Input ~ 0
+ROW3
+Text GLabel 3400 2750 2    50   Input ~ 0
+ROW3
+Connection ~ 6750 2000
+Wire Wire Line
+	6250 2000 6750 2000
+Wire Wire Line
+	8850 1550 8850 2300
+Connection ~ 8850 1550
+Connection ~ 8850 2300
+Wire Wire Line
+	8550 2000 9300 2000
+Connection ~ 8550 2000
+Connection ~ 9300 2000
+Wire Wire Line
+	7900 2000 7400 2000
+Connection ~ 7900 2000
+Connection ~ 7400 2000
+Wire Wire Line
+	7700 1550 7700 2300
+Connection ~ 7700 1550
+Connection ~ 7700 2300
+Wire Wire Line
+	7700 2300 7700 3000
+Wire Wire Line
+	5600 2000 5100 2000
+Connection ~ 5600 2000
+Connection ~ 5100 2000
+Wire Wire Line
+	5400 1550 5400 2300
+Connection ~ 5400 1550
+Connection ~ 5400 2300
+Wire Wire Line
+	6550 1550 6550 2300
+Connection ~ 6550 1550
+Connection ~ 6550 2300
+Wire Wire Line
+	10250 1550 10250 2300
+Connection ~ 10250 1550
+Connection ~ 10250 2300
+Wire Wire Line
+	10250 2300 10250 3000
+Text GLabel 3400 3850 2    50   Input ~ 0
+COL5
+$Comp
+L power:GND #PWR0114
+U 1 1 5E75BA57
+P 4500 6600
+F 0 "#PWR0114" H 4500 6350 50  0001 C CNN
+F 1 "GND" H 4505 6427 50  0000 C CNN
+F 2 "" H 4500 6600 50  0001 C CNN
+F 3 "" H 4500 6600 50  0001 C CNN
+	1    4500 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 6600 4500 6600
+Text Label 2050 3150 0    50   ~ 0
+DN+
+Text Label 2050 3250 0    50   ~ 0
+DN-
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5E9027B1
+P 4400 6200
+F 0 "J1" H 4457 6667 50  0000 C CNN
+F 1 "USB_B_Micro" H 4457 6576 50  0000 C CNN
+F 2 "random-keyboard-parts:MOLEX_47642-0001_HandSoldering_cuts" H 4550 6150 50  0001 C CNN
+F 3 "~" H 4550 6150 50  0001 C CNN
+	1    4400 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6600 4400 6600
+Connection ~ 4400 6600
+$EndSCHEMATC
